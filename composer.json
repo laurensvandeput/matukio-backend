@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "Matukio",
+    "description": "Matukio composer",
     "type": "project",
     "license": "MIT",
     "authors": [
