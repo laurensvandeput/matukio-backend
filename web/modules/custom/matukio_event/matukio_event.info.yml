@@ -1,0 +1,38 @@
+name: 'Matukio Event'
+description: 'Contains the event, session and asset content types and views.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: 'Test bundle'
+config:
+  - core.base_field_override.node.event.promote
+  - core.base_field_override.node.session.promote
+  - core.entity_form_display.node.event.default
+  - core.entity_form_display.node.session.default
+  - core.entity_view_display.node.event.default
+  - core.entity_view_display.node.event.teaser
+  - core.entity_view_display.node.session.default
+  - core.entity_view_display.node.session.teaser
+  - field.field.node.event.body
+  - field.field.node.event.field_date_from
+  - field.field.node.event.field_date_to
+  - field.field.node.event.field_sessions
+  - field.field.node.session.body
+  - field.storage.node.field_date_from
+  - field.storage.node.field_date_to
+  - field.storage.node.field_sessions
+  - node.type.event
+  - node.type.session
+  - views.view.events
+dependencies:
+  - datetime
+  - entity_reference
+  - menu_ui
+  - node
+  - path
+  - rest
+  - text
+  - user
+  - features
+features:
+  bundle: matukio
