@@ -4,14 +4,14 @@ core: 8.x
 version: 8.x-1.0
 description: 'Contains asset content type.'
 dependencies:
-  6: entity_reference
-  0: image
-  8: inline_entity_form
-  1: menu_ui
-  2: node
-  3: path
-  4: text
-  5: user
+  - entity_reference
+  - image
+  - inline_entity_form
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
 features:
   excluded:
     - field.field.node.asset.field_asset_feedback

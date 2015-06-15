@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_date_from
     - field.field.node.event.field_date_to
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_asset
     - field.field.node.event.field_event_members
     - field.field.node.event.field_event_tags
     - field.field.node.event.field_event_type
@@ -51,6 +52,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+  field_event_asset:
+    weight: 40
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_event_members:
     weight: 36
     settings:
