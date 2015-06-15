@@ -3,6 +3,19 @@ type: module
 core: 8.x
 version: 8.x-1.0
 description: 'Contains asset content type.'
+config:
+  - core.base_field_override.node.asset.promote
+  - core.entity_form_display.node.asset.default
+  - core.entity_view_display.node.asset.default
+  - core.entity_view_display.node.asset.teaser
+  - field.field.node.asset.field_asset_description
+  - field.field.node.asset.field_asset_feedback
+  - field.field.node.asset.field_asset_image
+  - field.storage.node.field_asset_description
+  - field.storage.node.field_asset_feedback
+  - field.storage.node.field_asset_image
+  - image.style.asset_image_style
+  - node.type.asset
 dependencies:
   - entity_reference
   - image
@@ -13,5 +26,4 @@ dependencies:
   - text
   - user
 features:
-  excluded:
-    - field.field.node.asset.field_asset_feedback
+  bundle: matukio
