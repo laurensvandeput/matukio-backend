@@ -1,0 +1,5 @@
+name: 'Matukio Asset'
+type: module
+core: 8.x
+version: 7.x-1.0
+features: true

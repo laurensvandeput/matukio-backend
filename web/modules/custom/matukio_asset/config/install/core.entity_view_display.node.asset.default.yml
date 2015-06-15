@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.asset.field_asset_description
+    - field.field.node.asset.field_asset_image
+    - node.type.asset
+  module:
+    - image
+    - text
+    - user
+id: node.asset.default
+targetEntityType: node
+bundle: asset
+mode: default
+content:
+  field_asset_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_asset_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

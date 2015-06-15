@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.asset.field_asset_image
+    - node.type.asset
+  module:
+    - user
+id: node.asset.teaser
+targetEntityType: node
+bundle: asset
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_asset_image: true
