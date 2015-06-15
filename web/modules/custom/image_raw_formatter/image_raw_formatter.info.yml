@@ -1,0 +1,5 @@
+name: Image Raw Formatter
+type: module
+description: Image Raw formatter return absolute URLs of images useful in Rest.
+core: 8.x
+package: Formatters
