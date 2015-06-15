@@ -1,0 +1,19 @@
+name: 'Matukio Feedback'
+description: 'Contains the feedback content type.'
+type: module
+core: 8.x
+package: 'Test bundle'
+features:
+  bundle: matukio
+config:
+  - core.base_field_override.node.feedback.promote
+  - core.entity_form_display.node.feedback.default
+  - core.entity_view_display.node.feedback.default
+  - core.entity_view_display.node.feedback.teaser
+  - field.field.node.feedback.field_feedback_feedback
+  - field.field.node.feedback.field_feedback_rating
+  - field.field.node.feedback.field_feedback_user
+  - field.storage.node.field_feedback_feedback
+  - field.storage.node.field_feedback_rating
+  - field.storage.node.field_feedback_user
+  - node.type.feedback

@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.feedback.field_feedback_feedback
+    - field.field.node.feedback.field_feedback_rating
+    - field.field.node.feedback.field_feedback_user
+    - node.type.feedback
+  module:
+    - user
+id: node.feedback.default
+targetEntityType: node
+bundle: feedback
+mode: default
+content:
+  field_feedback_feedback:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_feedback_rating:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_feedback_user:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+hidden: {  }
