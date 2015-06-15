@@ -41,3 +41,6 @@ features:
     - field.field.node.event.field_event_members
     - field.field.node.event.field_event_tags
     - field.field.node.event.field_event_type
+    - field.field.node.session.field_date_from
+    - field.field.node.session.field_date_to
+    - field.field.node.session.field_session_location
