@@ -5,6 +5,10 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_date_from
     - field.field.node.event.field_date_to
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_members
+    - field.field.node.event.field_event_tags
+    - field.field.node.event.field_event_type
     - field.field.node.event.field_sessions
     - node.type.event
   module:
@@ -40,6 +44,36 @@ content:
     weight: 33
     settings: {  }
     third_party_settings: {  }
+  field_event_address:
+    weight: 35
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_event_members:
+    weight: 36
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_event_tags:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_event_type:
+    weight: 39
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_sessions:
     type: inline_entity_form_multiple
     weight: 34

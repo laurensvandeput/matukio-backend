@@ -25,14 +25,19 @@ config:
   - node.type.session
   - views.view.events
 dependencies:
-  0: datetime
-  1: entity_reference
-  8: features
-  11: inline_entity_form
-  2: menu_ui
-  3: node
-  4: path
-  5: rest
-  6: text
-  7: user
-features: true
+  - datetime
+  - entity_reference
+  - features
+  - inline_entity_form
+  - menu_ui
+  - node
+  - path
+  - rest
+  - text
+  - user
+features:
+  excluded:
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_members
+    - field.field.node.event.field_event_tags
+    - field.field.node.event.field_event_type
