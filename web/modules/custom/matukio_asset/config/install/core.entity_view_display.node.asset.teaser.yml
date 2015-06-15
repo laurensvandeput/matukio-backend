@@ -15,4 +15,5 @@ content:
   links:
     weight: 100
 hidden:
+  field_asset_description: true
   field_asset_image: true
