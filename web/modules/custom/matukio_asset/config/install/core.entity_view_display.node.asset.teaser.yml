@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.asset.field_asset_description
+    - field.field.node.asset.field_asset_feedback
     - field.field.node.asset.field_asset_image
     - node.type.asset
   module:
@@ -16,4 +18,5 @@ content:
     weight: 100
 hidden:
   field_asset_description: true
+  field_asset_feedback: true
   field_asset_image: true

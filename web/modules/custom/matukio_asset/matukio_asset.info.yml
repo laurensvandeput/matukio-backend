@@ -16,14 +16,18 @@ config:
   - field.storage.node.field_asset_image
   - image.style.asset_image_style
   - node.type.asset
+  - views.view.asset
 dependencies:
-  - entity_reference
-  - image
-  - inline_entity_form
-  - menu_ui
-  - node
-  - path
-  - text
-  - user
+  0: entity_reference
+  1: image
+  10: image_raw_formatter
+  2: inline_entity_form
+  3: menu_ui
+  4: node
+  5: path
+  15: rest
+  6: text
+  7: user
+package: 'Test bundle'
 features:
   bundle: matukio
