@@ -42,4 +42,5 @@ dependencies:
   - rest
   - text
   - user
-
+features:
+  bundle: matukio
