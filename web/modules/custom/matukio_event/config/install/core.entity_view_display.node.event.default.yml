@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_date_from
     - field.field.node.event.field_date_to
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_asset
     - field.field.node.event.field_event_members
     - field.field.node.event.field_event_tags
     - field.field.node.event.field_event_type
@@ -46,6 +47,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+  field_event_asset:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_event_members:
     weight: 106
     label: above

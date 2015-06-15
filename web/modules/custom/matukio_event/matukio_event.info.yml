@@ -17,6 +17,7 @@ config:
   - field.field.node.event.field_date_from
   - field.field.node.event.field_date_to
   - field.field.node.event.field_event_address
+  - field.field.node.event.field_event_asset
   - field.field.node.event.field_event_members
   - field.field.node.event.field_event_tags
   - field.field.node.event.field_event_type
@@ -29,6 +30,7 @@ config:
   - field.storage.node.field_date_to
   - field.storage.node.field_event_address
   - field.storage.node.field_event_members
+  - field.storage.node.field_event_asset
   - field.storage.node.field_event_tags
   - field.storage.node.field_event_type
   - field.storage.node.field_session_location
