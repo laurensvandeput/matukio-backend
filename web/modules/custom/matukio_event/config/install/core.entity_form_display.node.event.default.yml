@@ -9,6 +9,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - inline_entity_form
     - path
     - text
 id: node.event.default
@@ -30,23 +31,26 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_date_from:
+    type: datetime_default
     weight: 32
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
   field_date_to:
+    type: datetime_default
     weight: 33
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
   field_sessions:
+    type: inline_entity_form_multiple
     weight: 34
     settings:
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      allow_existing: false
+      delete_references: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
   path:
     type: path
     weight: 30
@@ -54,15 +58,15 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 15
     settings:
       display_label: true
-    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 16
     settings:
       display_label: true
-    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield

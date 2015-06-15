@@ -11,7 +11,7 @@ field_name: body
 entity_type: node
 bundle: event
 label: Body
-description: 'Test2'
+description: Test2
 required: false
 translatable: true
 default_value: {  }
