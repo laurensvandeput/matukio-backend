@@ -119,16 +119,10 @@ class ConfigReverter implements ConfigRevertInterface {
    * {@inheritdoc}
    */
   public function revert($type, $name) {
-    var_dump('ok');
-    var_dump($type);
-    var_dump($name);
 
     // Read the config from the file.
     $full_name = $this->getFullName($type, $name);
-    var_dump($full_name);
-    dd($this->extensionConfigStorage->listAll());
     $value = $this->extensionConfigStorage->read($full_name);
-    var_dump($value);
 
     if ($type == 'system.simple') {
       // Load the current config and replace the value.
@@ -142,9 +136,7 @@ class ConfigReverter implements ConfigRevertInterface {
 
       $id = $value[$id_key];
       $entity_storage = $this->entityManager->getStorage($type);
-//      var_dump($entity_storage);
       $entity = $entity_storage->load($id);
-      var_dump($entity);
       $uuid = $entity->get('uuid');
       $entity = $entity_storage->updateFromStorageRecord($entity, $value);
       $entity->set('uuid', $uuid);
