@@ -17,6 +17,13 @@ config:
   - field.field.node.event.field_date_from
   - field.field.node.event.field_date_to
   - field.field.node.event.field_sessions
+  - field.field.node.event.field_event_address
+  - field.field.node.event.field_event_members
+  - field.field.node.event.field_event_tags
+  - field.field.node.event.field_event_type
+  - field.field.node.session.field_date_from
+  - field.field.node.session.field_date_to
+  - field.field.node.session.field_session_location
   - field.field.node.session.body
   - field.storage.node.field_date_from
   - field.storage.node.field_date_to
@@ -35,12 +42,4 @@ dependencies:
   - rest
   - text
   - user
-features:
-  excluded:
-    - field.field.node.event.field_event_address
-    - field.field.node.event.field_event_members
-    - field.field.node.event.field_event_tags
-    - field.field.node.event.field_event_type
-    - field.field.node.session.field_date_from
-    - field.field.node.session.field_date_to
-    - field.field.node.session.field_session_location
+
