@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: asset_image_style
+label: Asset
+effects:
+  8a4a45cc-8670-4111-9c2b-43800c98db2a:
+    uuid: 8a4a45cc-8670-4111-9c2b-43800c98db2a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 300
