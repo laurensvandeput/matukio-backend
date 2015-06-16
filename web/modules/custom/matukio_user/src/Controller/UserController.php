@@ -68,8 +68,8 @@ class UserController extends ControllerBase {
     if ($node && $node->getType() == 'event') {
       $this->matukio_remove_unused_values_from_field($node, 'field_event_members');
 
+      $values = $node->get('field_event_members')->getValue();
       if ($this->matukio_user_is_registered($name, $values)) {
-        $values = $node->get('field_event_members')->getValue();
         foreach ($values as $key => $value) {
           if ($value['value'] == $name) {
             $index = $key;
