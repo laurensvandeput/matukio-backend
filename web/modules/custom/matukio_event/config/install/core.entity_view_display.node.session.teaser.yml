@@ -4,6 +4,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_date_from
+    - field.field.node.session.field_date_to
+    - field.field.node.session.field_session_location
     - node.type.session
   module:
     - text
@@ -22,4 +25,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_date_from: true
+  field_date_to: true
+  field_session_location: true
