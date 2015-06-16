@@ -44,6 +44,7 @@ dependencies:
   - datetime
   - entity_reference
   - features
+  - image_raw_formatter
   - inline_entity_form
   - menu_ui
   - node
