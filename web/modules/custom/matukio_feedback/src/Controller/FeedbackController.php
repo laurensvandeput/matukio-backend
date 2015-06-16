@@ -30,7 +30,7 @@ class FeedbackController extends ControllerBase {
     if ($node && $node->getType() == 'event') {
 
       $params = $request->request->all();
-      $this->feedback_check_required_fields($response, $params);
+      $response = $this->feedback_check_required_fields($response, $params);
 
       if (!empty($response)) {
         return new JsonResponse($response);
@@ -67,7 +67,7 @@ class FeedbackController extends ControllerBase {
     if ($node && $node->getType() == 'asset') {
 
       $params = $request->request->all();
-      $this->feedback_check_required_fields($response, $params);
+      $response = $this->feedback_check_required_fields($response, $params);
 
       if (!empty($response)) {
         return new JsonResponse($response);
