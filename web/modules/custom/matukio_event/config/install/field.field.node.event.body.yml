@@ -10,7 +10,7 @@ id: node.event.body
 field_name: body
 entity_type: node
 bundle: event
-label: Body
+label: Description
 description: 'Description for the event'
 required: false
 translatable: true
