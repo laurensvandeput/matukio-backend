@@ -1,0 +1,6 @@
+name: Matukio User
+type: module
+description: User registration etc
+core: 8.x
+package: Matukio
+

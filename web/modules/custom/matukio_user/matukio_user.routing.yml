@@ -1,0 +1,16 @@
+matukio_user.user_controller_register:
+  path: '/event/{id}/register/{name}'
+  defaults:
+    _controller: '\Drupal\matukio_user\Controller\UserController::register'
+    _title: 'Register user'
+  requirements:
+    _permission: 'access content'
+
+matukio_user.user_controller_unregister:
+  path: '/event/{id}/unregister/{name}'
+  defaults:
+    _controller: '\Drupal\matukio_user\Controller\UserController::unregister'
+    _title: 'Unregister user'
+  requirements:
+    _permission: 'access content'
+
