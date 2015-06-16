@@ -1,0 +1,14 @@
+matukio_feedback.feedback_controller_add_feedback_to_event:
+  path: '/event/{id}/feedback'
+  defaults:
+    _controller: '\Drupal\matukio_feedback\Controller\FeedbackController::addFeedbackToEvent'
+    _title: 'Register feedback to event'
+  requirements:
+    _permission: 'access content'
+matukio_feedback.feedback_controller_add_feedback_to_asset:
+  path: '/asset/{id}/feedback'
+  defaults:
+    _controller: '\Drupal\matukio_feedback\Controller\FeedbackController::addFeedbackToAsset'
+    _title: 'Register feedback to asset'
+  requirements:
+    _permission: 'access content'

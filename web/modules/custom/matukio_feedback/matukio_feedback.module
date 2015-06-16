@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains matukio_feedback.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function matukio_feedback_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the matukio_feedback module.
+    case 'help.page.matukio_feedback':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Feedback registration etc') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function matukio_feedback_theme() {
+  $theme = [];
+
+  return $theme;
+}
