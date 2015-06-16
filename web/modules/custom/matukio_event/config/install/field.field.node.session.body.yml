@@ -10,7 +10,7 @@ id: node.session.body
 field_name: body
 entity_type: node
 bundle: session
-label: Body
+label: Description
 description: 'Body of session ctype.'
 required: false
 translatable: true
